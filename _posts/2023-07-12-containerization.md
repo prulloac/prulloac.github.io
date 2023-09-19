@@ -7,7 +7,7 @@ tags: devops containers
 categories: tech-guides devops-guides
 giscus_comments: true
 related_posts: false
-related_publications: einstein1950meaning, einstein1905movement
+related_publications: 
 ---
 
 ## TL;DR
@@ -57,7 +57,8 @@ Containers address these challenges by encapsulating applications and their depe
 
 ## Containers vs Virtual Machines
 
-![Containers opposed to VMs](img/containers-vs-vm.png)
+{% include figure.html path="assets/img/_blog/containers/containers-vs-vm.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
 
 Containers and virtual machines (VMs) serve similar purposes but differ in several ways:
 
