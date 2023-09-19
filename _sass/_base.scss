@@ -1109,3 +1109,8 @@ nav[data-toggle="toc"] {
     text-shadow: 1px 1px 5px darkslategray;
   }
 }
+
+a.news-source.initialism.col-md-6.float-left {
+  color: #{$blue-color-dark};
+  font-weight: lighter;
+}

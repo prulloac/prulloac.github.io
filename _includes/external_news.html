@@ -1,0 +1,36 @@
+
+          <div class="news">
+            {% if site.external_news != blank -%}
+            {%- assign external_news_size = site.external_news | size -%}
+            <div class="table-responsive" {% if site.external_news.scrollable and external_news_size > 3 %}style="max-height: 60vw"{% endif %}>
+              <table class="table table-sm table-borderless news-table">
+              {%- assign external_news = site.external_news -%}
+              {% if site.external_news.limit %}
+              {% assign external_news_limit = site.external_news.limit %}
+              {% else %}
+              {% assign external_news_limit = external_news_size %}
+              {% endif %}
+              {% for item in external_news limit: external_news_limit %}
+                <tr>
+                  <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+                  <td><a class="news-source initialism col-md-6 float-left" href="{{ item.external_source_url }}">{{ item.external_source }}</a>
+                    {% if item.redirect == blank %}
+                      <a class="news-title lead col-md-12 float-left" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                    {% elsif item.redirect contains '://' %}
+                      <a class="news-title lead col-md-12 float-left" href="{{ item.redirect }}" target="_blank">{{ item.title }}
+                      <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      </a>
+                    {% else %}
+                    <a class="news-title lead col-md-12 float-left" href="{{ item.redirect | relative_url }}">{{ item.title }}</a>
+                    {% endif %}
+                  </td>
+                </tr>
+              {%- endfor %}
+              </table>
+            </div>
+          {%- else -%}
+            <p>No external news so far...</p>
+          {%- endif %}
+          </div>

@@ -163,6 +163,17 @@ external_sources:
   - name: medium.com
     rss_url: https://medium.com/@pabloulloacastro/feed
 
+external_news_sources:
+  - name: Google Cloud @medium.com
+    rss_url: https://medium.com/feed/google-cloud
+    url: https://medium.com/google-cloud
+  - name: Spring.io
+    rss_url: https://spring.io/blog.atom
+    url: https://spring.io/blog
+  - name: Baeldung
+    rss_url: https://feeds.feedblitz.com/baeldung
+    url: https://www.baeldung.com/
+
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
@@ -173,6 +184,11 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
+  external_news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /external_news/:path/
   projects:
     output: true
     permalink: /projects/:path/
