@@ -1064,3 +1064,48 @@ nav[data-toggle="toc"] {
     padding-top: 0.5rem;
   }
 }
+
+// Photography Portfolio
+
+.photography-portfolio {
+  margin-bottom: 40px;
+
+  img {
+    max-height: 400px;
+    overflow: clip;
+  }
+
+  .card {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+
+    .badge {
+      margin-top: 10px;
+      position: absolute;
+      margin-left: 10px;
+      font-size: 100%;
+  
+      a {
+        color: var(--global-text-color);
+      }
+    }
+
+    .badge-primary {
+      background-color: rgb(255 255 255 / 0.5) !important;
+    }
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .card-description {
+    background-color: rgb(255 255 255 / 0.5);
+    backdrop-filter:  contrast(40%) opacity(20%);
+    margin-top: -56px; 
+    margin-right: 16px; 
+    padding: 8px;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px darkslategray;
+  }
+}

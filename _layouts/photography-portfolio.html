@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<!-- page.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <p class="post-description">{{ page.description }}</p>
+          </header>
+
+          <article>
+            <div class="photography-portfolio">
+              {% for album in page.albums %}
+                <div class="card mt-3 p-3">
+                  <div>
+                    <span class="badge badge-primary float-left"><a href="https://google.com/maps/place/{{ album.location }}">{{ album.location }}</a></span>
+                    <div class="card-body">
+                    <a href="{{ album.url }}" target="_blank">
+                      <img class="card-img-top" src="{{ album.cover }}" alt="{{ album.title }}">
+                    </a>
+                      <p class="card-description float-right">{{ album.description }}</p>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+              </div>
+          </article>
+        </div>
