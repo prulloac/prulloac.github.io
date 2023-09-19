@@ -49,7 +49,9 @@
 				"donjayamanne.python-extension-pack",
 				"walkme.Ruby-extension-pack",
 				"ms-vscode-remote.remote-containers",
-				"GitHub.codespaces"
+				"GitHub.codespaces",
+				"github.vscode-github-actions",
+				"me-dutour-mathieu.vscode-github-actions"
 			]
 		}
 	},

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Containers
-date: 2023-07-17 09:00:00-0400
+date: 2023-09-17 09:00:00-0400
 description: A brief introduction to containers and containerization.
 tags: devops containers
 categories: tech-guides devops-guides
