@@ -1,69 +1,158 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Pablo Ricardo Ulloa Castro",
+    "label": "Software Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "pablo.ulloac@usach.cl",
+    "phone": "(+56) 9 5009 3039",
+    "url": "https://prulloac.github.io/",
+    "summary": "Software engineer whose interests involve Cloud Architecture, Coding and Machine Learning to improve the quality of life of people.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "",
+        "username": "",
+        "url": ""
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Equifax",
+      "position": "Software Engineering Specialist",
+      "url": "https://www.equifax.com/",
+      "startDate": "2022-11-10",
+      "endDate": "",
+      "summary": "Acting Tribe Technical Lead. Collaborated in design and development of Event Streaming solutions, application security improvements and tribe internal Git and Coding standards.",
       "highlights": [
-        "Relativity"
+        "GCP", "Terraform", "Java", "Apache Beam", "Spring"
+      ]
+    },
+    {
+      "name": "Vacasa",
+      "position": "Senior Software Engineer",
+      "url": "https://www.vacasa.com/",
+      "startDate": "2021-12-10",
+      "endDate": "2022-11-04",
+      "summary": "Collaborated in the technical design and implementation of housing rates manager portal for risk analysts. Achieved latency reduction of internal APIs and improved memory usage of Lambda functions directly impacting in cloud costs reduction",
+      "highlights": [
+        "AWS", "Terraform", "Typescript", "NestJS"
+      ]
+    },
+    {
+      "name": "Mercado Libre",
+      "position": "Semi Senior Software Engineer",
+      "url": "https://mercadolibre.com/",
+      "startDate": "2021-07-10",
+      "endDate": "2021-11-30",
+      "summary": "Collaborated in the upgrade of several Java APIs from using Java 8 to Java 11. While not working on API upgrades, helped in the implementation of Java Coding Style Standardization and in maintaining internal Java and Go SDKs",
+      "highlights": [
+        "Java", "Spring", "Go"
+      ]
+    },
+    {
+      "name": "Equifax",
+      "position": "Squad & QA Lead",
+      "url": "https://www.equifax.com/",
+      "startDate": "2020-07-10",
+      "endDate": "2021-07-01",
+      "summary": "While leading Events and Metering Squad, also performed as acting QA Lead and contingency developer and SRE.",
+      "highlights": [
+        "GCP", "Terraform", "Java", "Apache Beam", "Spring", "Karate"
+      ]
+    },
+    {
+      "name": "Equifax",
+      "position": "Semi Senior Software Engineer",
+      "url": "https://www.equifax.com/",
+      "startDate": "2020-03-10",
+      "endDate": "2022-07-10",
+      "summary": "Involved in the development of critical Event Streaming Framework to be used worldwide inside the company",
+      "highlights": [
+        "GCP", "Terraform", "Java", "Apache Beam", "Spring"
+      ]
+    },
+    {
+      "name": "Universidad de Santiago",
+      "position": "Assistant Professor",
+      "url": "https://www.usach.cl/",
+      "startDate": "2019-08-10",
+      "endDate": "2021-03-10",
+      "summary": "Taught courses of Programming Fundamentals for Engineering students of different majors",
+      "highlights": [
+        "Python", "Data Structures", "Algorythms"
+      ]
+    },
+    {
+      "name": "AVLA",
+      "position": "Software Engineer",
+      "url": "https://www.avla.com/",
+      "startDate": "2018-02-10",
+      "endDate": "2020-03-10",
+      "summary": "Co-designed and developed multi tenant internal platforms",
+      "highlights": [
+        "Java", "Spring", "AWS", "Angular"
       ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "institution": "Universidad de Santiago, Santiago, Chile",
+      "url": "https://www.usach.cl/",
+      "area": "Computing and Informatics Engineering",
+      "studyType": "Major",
+      "startDate": "2013-03-01",
+      "endDate": "2018-10-01",
       "score": "",
-      "courses": [
-        "Theory of Relativity"
-      ]
-    }
-  ],
-  "awards": [
+      "courses": ["Algorythms", "Data Structures", "Computer Networks", "Computer Security", "Software Project Management", "Software Design", "Software Architecture"]
+    },
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "institution": "Universidad de Santiago, Santiago, Chile",
+      "url": "https://www.usach.cl/",
+      "area": "Applied Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2013-03-01",
+      "endDate": "2018-10-01",
+      "score": "",
+      "courses": ["Physics", "Statistics", "Differential Equations", "Numerical Methods", "Linear Algebra", "Operations Research", "Optimization"]
     }
   ],
-  "certificates": [],
+  "awards": [],
+  "certificates": [
+    {
+      "date": "2023-06-13",
+      "name": "Professional Cloud Architect",
+      "issuer": "Google Cloud",
+      "url": "https://google.accredible.com/9e2581c7-37ea-4e4b-9cc1-10486ab5b927",
+      "icon": "fa-brands fa-google"
+    },
+    {
+      "date": "2023-02-14",
+      "name": "Cloud Digital Leader",
+      "issuer": "Google Cloud",
+      "url": "https://www.credential.net/a159fba5-cf4a-4a86-947e-dd6ad5d8d557",
+      "icon": "fa-brands fa-google"
+    },
+    {
+      "date": "2020-12-08",
+      "name": "Associate Cloud Engineer",
+      "issuer": "Google Cloud",
+      "url": "https://google.accredible.com/ed828d61-de62-4306-8f06-465e1d0cdaae",
+      "icon": "fa-brands fa-google"
+    }
+  ],
   "publications": [],
   "skills": [],
   "languages": [
     {
-      "language": "German",
+      "language": "Spanish",
       "fluency": "Native speaker"
     },
     {

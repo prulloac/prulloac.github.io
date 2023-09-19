@@ -1,12 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - prulloac
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - prulloac/configurable-pr-labeler
+  - prulloac/devcontainers-snippets
+  - prulloac/commit-syntax-verifier
