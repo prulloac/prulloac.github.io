@@ -9,7 +9,16 @@ layout: default
   </header>
 
   <article>
-    {%- include external_news.html %}
+    <div>
+      Articles from the following external news and blogs:
+      <ul>
+        {% for source in site.external_news_sources %}
+        <li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      {%- include external_news.html %}
+    </div>
   </article>
 </div>
-

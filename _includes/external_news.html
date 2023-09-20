@@ -4,7 +4,7 @@
             {%- assign external_news_size = site.external_news | size -%}
             <div class="table-responsive" {% if site.external_news.scrollable and external_news_size > 3 %}style="max-height: 60vw"{% endif %}>
               <table class="table table-sm table-borderless news-table">
-              {%- assign external_news = site.external_news -%}
+              {%- assign external_news = site.external_news | sort_natural: "date" | reverse | slice: 0, 15 -%}
               {% if site.external_news.limit %}
               {% assign external_news_limit = site.external_news.limit %}
               {% else %}

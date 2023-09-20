@@ -10,8 +10,8 @@ on:
       - master
       - main
   schedule:
-    # Runs at 00:00 UTC every Monday
-    - cron: '0 0 * * 1'
+    # Runs at 09:00 UTC every Wednesday and Saturday.
+    - cron: '0 9 * * 3,6'
   workflow_dispatch:
 
 permissions:

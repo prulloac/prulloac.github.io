@@ -164,15 +164,30 @@ external_sources:
     rss_url: https://medium.com/@pabloulloacastro/feed
 
 external_news_sources:
-  - name: Google Cloud @medium.com
-    rss_url: https://medium.com/feed/google-cloud
-    url: https://medium.com/google-cloud
+  - name: Google Cloud Blog
+    rss_url: https://cloudblog.withgoogle.com/rss/
+    url: https://cloud.google.com/blog/
+  - name: AWS News Blog
+    rss_url: https://aws.amazon.com/blogs/aws/feed
+    url: https://aws.amazon.com/blogs/aws
+  - name: Netflix Tech Blog
+    rss_url: https://netflixtechblog.com/feed
+    url: https://netflixtechblog.com
+  - name: Spotify R&D | Engineering
+    rss_url: https://engineering.atspotify.com/feed
+    url: https://engineering.atspotify.com
+  - name: Engineering at Meta
+    rss_url: https://engineering.fb.com/feed
+    url: https://engineering.fb.com
+  - name: Baeldung
+    rss_url: https://feeds.feedblitz.com/baeldung
+    url: https://www.baeldung.com
   - name: Spring.io
     rss_url: https://spring.io/blog.atom
     url: https://spring.io/blog
-  - name: Baeldung
-    rss_url: https://feeds.feedblitz.com/baeldung
-    url: https://www.baeldung.com/
+  - name: ByteByteGo
+    rss_url: https://blog.bytebytego.com/feed
+    url: https://blog.bytebytego.com
 
 # -----------------------------------------------------------------------------
 # Collections
