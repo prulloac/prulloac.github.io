@@ -4,6 +4,7 @@
 
   <picture>
     {% if site.imagemagick.enabled %}
+    {% assign largest_width = site.imagemagick.widths | sort | last %}
     {% for i in site.imagemagick.widths -%}
       <source
         class="responsive-img-srcset"
@@ -13,9 +14,9 @@
     {% endfor -%}
     {% endif %}
 
-    <!-- Fallback to the original file -->
+    <!-- Fallback to the largest image version -->
     <img
-      src="{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
+      src="{% if include.cache_bust %}{{ img_path | relative_url | bust_file_cache }}{% else %}{{ img_path | relative_url }}{% endif %}-{{largest_width}}.webp"
       {% if include.class %}class="{{ include.class }}"{% endif %}
       {% if include.width %}width="{{ include.width }}"{% else %}width="auto"{% endif %}
       {% if include.height %}height="{{ include.height }}"{% else %}height="auto"{% endif %}
