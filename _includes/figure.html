@@ -16,7 +16,7 @@
 
     <!-- Fallback to the largest image version -->
     <img
-      src="{% if include.cache_bust %}{{ img_path | relative_url | bust_file_cache }}{% else %}{{ img_path | relative_url }}{% endif %}-{{largest_width}}.webp"
+      src="{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ img_path | relative_url }}-{{ largest_width }}.webp{% endif %}"
       {% if include.class %}class="{{ include.class }}"{% endif %}
       {% if include.width %}width="{{ include.width }}"{% else %}width="auto"{% endif %}
       {% if include.height %}height="{{ include.height }}"{% else %}height="auto"{% endif %}
