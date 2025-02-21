@@ -3,29 +3,8 @@
 {
 	"name": "Ubuntu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"image": "ghcr.io/prulloac/bun:ubuntu",
 	"features": {
-		"ghcr.io/devcontainers/features/git:1": {
-			"ppa": true,
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/github-cli:1": {
-			"installDirectlyFromGitHubRelease": true,
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/python:1": {
-			"installTools": true,
-			"installJupyterlab": true,
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/ruby:1": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/node:1": {
-			"nodeGypDependencies": true,
-			"version": "latest",
-			"nvmVersion": "latest"
-		},
 		"ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
 			"plugins": "ssh-agent npm",
 			"omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions",
@@ -41,13 +20,8 @@
 				"GitHub.copilot-labs",
 				"bierner.github-markdown-preview",
 				"GitHub.remotehub",
-				"henriqueBruno.github-repository-manager",
-				"eamodio.gitlens",
 				"VisualStudioExptTeam.vscodeintellicode",
 				"VisualStudioExptTeam.intellicode-api-usage-examples",
-				"ms-toolsai.jupyter",
-				"donjayamanne.python-extension-pack",
-				"walkme.Ruby-extension-pack",
 				"ms-vscode-remote.remote-containers",
 				"GitHub.codespaces",
 				"github.vscode-github-actions",
@@ -63,7 +37,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo apt-get update -y && sudo apt-get -y install locales imagemagick build-essential zlib1g-dev"
+	//"postCreateCommand": ""
 
 	// Configure tool-specific properties.
 	// "customizations": {},
