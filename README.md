@@ -1,10 +1,31 @@
-# Portfolio
+# Website
 
-Forked from [ai-folio](https://github.com/alshedivat/al-folio)
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## License
+### Installation
 
-The theme is available as open source under the terms of the [MIT License](https://github.com/alshedivat/al-folio/blob/master/LICENSE).
+```
+$ bun
+```
 
-Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license).
-Since then, it got a full re-write of the styles and many additional cool features.
+### Local Development
+
+```
+$ bun serve
+```
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
